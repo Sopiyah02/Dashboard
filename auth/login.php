@@ -62,7 +62,7 @@ if (isset($_POST['login'])) {
 
 <style>
 body {
-    background: #f5f7fb;
+    background: #ffe6f0;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -71,13 +71,24 @@ body {
     margin: 100px auto;
     padding: 30px;
     border-radius: 20px;
-    background: #fff;
+    background: #fff0f8;
     box-shadow: 0 8px 25px rgba(0,0,0,0.05);
 }
 
 .btn-dark-custom {
-    background: linear-gradient(135deg, #111827, #374151);
+    background: linear-gradient(135deg, #d63384, #ff99c8);
     color: #fff;
+}
+
+.btn-dark-custom:hover {
+    background: linear-gradient(135deg, #ff66a3, #ffb3d9);
+    color: #fff;
+}
+
+.alert-danger {
+    background-color: #ffc0dd;
+    border-color: #ff99c8;
+    color: #800040;
 }
 </style>
 </head>
@@ -85,7 +96,7 @@ body {
 <body>
 
 <div class="card-login">
-    <h3 class="mb-3 text-center">Login</h3>
+    <h3 class="mb-3 text-center" style="color:#d63384;">Login</h3>
 
     <?php if (!empty($error)) echo "<div class='alert alert-danger'>$error</div>"; ?>
 
@@ -97,7 +108,7 @@ body {
     </form>
 
     <p class="mt-3 text-center">
-        No account? <a href="register.php">Register</a>
+        No account? <a href="register.php" style="color:#d63384;">Register</a>
     </p>
 </div>
 

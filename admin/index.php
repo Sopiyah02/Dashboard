@@ -17,7 +17,7 @@ $languages = mysqli_fetch_assoc(mysqli_query($conn,"SELECT COUNT(*) as total FRO
 
 <style>
 body {
-    background: #f5f7fb;
+    background: #ffe6f0; /* light pink background */
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -25,15 +25,16 @@ body {
 .sidebar {
     height: 100vh;
     width: 240px;
-    background: #ffffff;
+    background: #ffe6f0; /* soft pink sidebar */
     position: fixed;
     padding: 20px;
-    border-right: 1px solid #e5e7eb;
+    border-right: 1px solid #f0c0d6; /* pink border */
 }
 
 .sidebar h4 {
     font-weight: 700;
     margin-bottom: 30px;
+    color: #d63384; /* dark pink */
 }
 
 .sidebar a {
@@ -41,15 +42,15 @@ body {
     align-items: center;
     padding: 12px;
     border-radius: 10px;
-    color: #6b7280;
+    color: #a64d79; /* muted pink text */
     text-decoration: none;
     margin-bottom: 10px;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    background: #f3f4f6;
-    color: #111827;
+    background: #f9cfe3; /* pink hover */
+    color: #800040; /* darker pink */
 }
 
 .sidebar a i {
@@ -70,22 +71,22 @@ body {
 }
 
 .search-box {
-    background: #fff;
+    background: #fff0f8;
     padding: 8px 15px;
     border-radius: 20px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #f0c0d6;
 }
 
 /* Cards */
 .card-custom {
-    background: #fff;
+    background: #fff0f8; /* very light pink card */
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
 }
 
 .card-dark {
-    background: linear-gradient(135deg, #111827, #374151);
+    background: linear-gradient(135deg, #ff66b2, #ff3399); /* pink gradient */
     color: #fff;
 }
 
@@ -96,17 +97,16 @@ body {
 /* Chart Placeholder */
 .chart-box {
     height: 250px;
-    background: linear-gradient(135deg, #e5e7eb, #f9fafb);
+    background: linear-gradient(135deg, #f9cfe3, #ffe6f0);
     border-radius: 16px;
 }
 
 /* Table */
 .table-custom {
-    background: #fff;
+    background: #fff0f8; /* light pink table background */
     border-radius: 16px;
     overflow: hidden;
 }
-
 </style>
 </head>
 <body>

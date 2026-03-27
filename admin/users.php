@@ -15,22 +15,24 @@ $users = mysqli_query($conn,"SELECT * FROM users");
 
 <style>
 body {
-    background: #f5f7fb;
+    background: #ffe6f0;
     font-family: 'Segoe UI', sans-serif;
 }
 
+/* Sidebar */
 .sidebar {
     height: 100vh;
     width: 240px;
-    background: #ffffff;
+    background: #ffe6f0;
     position: fixed;
     padding: 20px;
-    border-right: 1px solid #e5e7eb;
+    border-right: 1px solid #f0c0d6;
 }
 
 .sidebar h4 {
     font-weight: 700;
     margin-bottom: 30px;
+    color: #d63384;
 }
 
 .sidebar a {
@@ -38,21 +40,22 @@ body {
     align-items: center;
     padding: 12px;
     border-radius: 10px;
-    color: #6b7280;
+    color: #a64d79;
     text-decoration: none;
     margin-bottom: 10px;
     transition: 0.3s;
 }
 
 .sidebar a:hover {
-    background: #f3f4f6;
-    color: #111827;
+    background: #f9cfe3;
+    color: #800040;
 }
 
 .sidebar a i {
     margin-right: 10px;
 }
 
+/* Content */
 .content {
     margin-left: 260px;
     padding: 30px;
@@ -69,11 +72,12 @@ body {
     background: #fff;
     padding: 8px 15px;
     border-radius: 20px;
-    border: 1px solid #e5e7eb;
+    border: 1px solid #f0c0d6;
 }
 
+/* Cards */
 .card-custom {
-    background: #fff;
+    background: #fff0f8;
     border-radius: 16px;
     padding: 20px;
     box-shadow: 0 8px 20px rgba(0,0,0,0.05);
@@ -84,6 +88,9 @@ body {
     overflow: hidden;
 }
 
+.table-hover tbody tr:hover { 
+    background: #ffd6e6; 
+}
 </style>
 </head>
 <body>

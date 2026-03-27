@@ -33,15 +33,34 @@ $lang = mysqli_query($conn,"SELECT * FROM languages");
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
 <style>
-body { background: #f5f7fb; font-family: 'Segoe UI', sans-serif; }
-.sidebar { height: 100vh; width: 240px; background: #fff; position: fixed; padding: 20px; border-right: 1px solid #e5e7eb; }
-.sidebar h4 { font-weight: 700; margin-bottom: 30px; }
-.sidebar a { display: flex; align-items: center; padding: 12px; border-radius: 10px; color: #6b7280; text-decoration: none; margin-bottom: 10px; }
-.sidebar a:hover { background: #f3f4f6; color: #111827; }
+body { background: #ffe6f0; font-family: 'Segoe UI', sans-serif; }
+
+/* Sidebar */
+.sidebar { height: 100vh; width: 240px; background: #ffe6f0; position: fixed; padding: 20px; border-right: 1px solid #f0c0d6; }
+.sidebar h4 { font-weight: 700; margin-bottom: 30px; color: #d63384; }
+.sidebar a { display: flex; align-items: center; padding: 12px; border-radius: 10px; color: #a64d79; text-decoration: none; margin-bottom: 10px; }
+.sidebar a:hover { background: #f9cfe3; color: #800040; }
 .sidebar a i { margin-right: 10px; }
+
+/* Content */
 .content { margin-left: 260px; padding: 30px; }
 .topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px; }
-.card-custom { background: #fff; border-radius: 16px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+
+/* Cards */
+.card-custom { background: #fff0f8; border-radius: 16px; padding: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.05); }
+
+/* Buttons */
+.btn-dark { background: linear-gradient(135deg, #ff66b2, #ff3399); color: #fff; border: none; }
+.btn-dark:hover { background: linear-gradient(135deg, #ff3399, #ff66b2); color: #fff; }
+
+.btn-primary { background: #ff66b2; border: none; color: #fff; }
+.btn-primary:hover { background: #ff3399; color: #fff; }
+
+.btn-success { background: #ff99cc; border: none; color: #fff; }
+.btn-success:hover { background: #ff66b2; color: #fff; }
+
+.btn-danger { background: #ff3399; border: none; color: #fff; }
+.btn-danger:hover { background: #d63384; color: #fff; }
 </style>
 </head>
 <body>
@@ -77,8 +96,8 @@ body { background: #f5f7fb; font-family: 'Segoe UI', sans-serif; }
 <td><?php echo $row['language_id']; ?></td>
 <td><?php echo $row['language_name']; ?></td>
 <td>
-    <button class="btn btn-sm btn-primary" data-bs-toggle="modal" data-bs-target="#editModal<?php echo $row['language_id']; ?>">Edit</button>
-    <a href="?delete=<?php echo $row['language_id']; ?>" class="btn btn-sm btn-danger">Delete</a>
+    <button class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#editModal<?php echo $row['language_id']; ?>">Edit</button>
+    <a href="?delete=<?php echo $row['language_id']; ?>" class="btn btn-danger btn-sm">Delete</a>
 </td>
 </tr>
 
