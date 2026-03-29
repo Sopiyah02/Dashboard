@@ -114,6 +114,7 @@ body {
 <div class="sidebar">
     <h4>ADMIN</h4>
     <a href="questions.php"><i class="bi bi-question-circle"></i> Manage Questions</a>
+    <a href="add_question.php"><i class="bi bi-plus-circle"></i> Add Question</a>
     <a href="languages.php"><i class="bi bi-translate"></i> Languages</a>
     <a href="users.php"><i class="bi bi-people"></i> Users</a>
     <a href="../logout.php"><i class="bi bi-box-arrow-right"></i> Logout</a>
